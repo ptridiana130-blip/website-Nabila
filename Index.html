@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nabila Putri Dianasari</title>
+
+    <style>
+        .greeting {
+    color: #7c6ee6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.home-text h1 span {
+    color: #7c6ee6;
+}
+
+.home-text h3 {
+    color: #666;
+    font-weight: 500;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fc;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav h2 {
+            color: #5b6ee1;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #5b6ee1;
+        }
+        nav a:hover {
+    color: #7c6ee6;
+    transform: translateY(-2px);
+}
+
+        /* HOME */
+        .home {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+        }
+
+        .home-text {
+            max-width: 600px;
+        }
+
+        .home-text p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .home-text h1 {
+            font-size: 50px;
+            color: #4f5fc5;
+            margin-bottom: 15px;
+        }
+
+        .home-text h3 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .home-text button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background-color: #5b6ee1;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(83, 104, 216, 0.3);
+}
+
+        .home-text button:hover {
+            background-color: #414fa8;
+        }
+
+        .home-photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+        /* SECTION */
+        section {
+            padding: 80px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #4f5fc5;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+        .about {
+            background-color: white;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* JOURNEY */
+        /* JOURNEY */
+
+#journey {
+    padding: 70px 20px;
+    background: #f7f8ff;
+}
+
+#journey h2 {
+    text-align: center;
+    color: #5368d8;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 300px;
+    padding: 25px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #5368d8;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.7;
+    color: #555;
+}
+
+        /* SKILLS */
+        .skills {
+            background-color: white;
+        }
+
+        .skill-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            padding: 12px 22px;
+            background-color: #eef0ff;
+            color: #4f5fc5;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 17px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #4f5fc5;
+            color: white;
+        }
+        .about-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-text {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.about-text h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-box {
+    width: 220px;
+    padding: 25px 20px;
+    background: white;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+}
+
+.info-box span {
+    font-size: 30px;
+}
+
+.info-box h4 {
+    margin: 12px 0 8px;
+    color: #7c6ee6;
+}
+
+.info-box p {
+    color: #666;
+    margin: 0;
+}
+/* COMMITTEE EXPERIENCE */
+
+#committee {
+    padding: 70px 20px;
+    background: white;
+}
+
+#committee h2 {
+    text-align: center;
+    color: #5368d8;
+    margin-bottom: 15px;
+}
+
+.committee-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.committee-gallery {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.committee-item {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.committee-item:hover {
+    transform: translateY(-8px);
+}
+
+.committee-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.committee-item h3 {
+    font-size: 17px;
+    color: #5368d8;
+    margin: 15px 15px 5px;
+}
+
+.committee-item p {
+    color: #666;
+    font-size: 14px;
+    margin: 0 15px 18px;
+}
+html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 780px) {
+    .committee-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-info {
+        flex-wrap: wrap;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>Nabila.</h2>
+
+        <ul>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#journey">Journey</a>
+            <a href="#committee">Committee</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </ul>
+    </nav>
+
+
+    <!-- HOME -->
+    <section class="home" id="home">
+
+        <div class="home-text">
+            <p class="greeting">HELLO, I'M </p>
+
+<h1>
+    Nabila Putri <span>Dianasari.</span>
+</h1>
+
+<h3>Physics Student & Creative Learner</h3>
+            <p>
+                Hai! Welcome to my little space ✨ Di sini kamu bisa kenal saya lebih dekat, mulai dari perjalanan kuliah, pengalaman organisasi dan mengajar, sampai berbagai hal seru yang sedang saya pelajari dan kerjakan.
+            </p>
+
+            <br>
+
+            <a href="#about">
+                <button>🌷 Get to Know Me</button>
+            </a>
+        </div>
+
+
+        <div class="home-photo">
+    <img src="IMAGES/nabila.jpeg" alt="Foto Nabila">
+</div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+
+    <div class="about-text">
+        <h3>A little bit about me ✨</h3>
+
+        <p>
+   Saya merupakan mahasiswa Fisika yang memiliki ketertarikan pada dunia pendidikan, komunikasi, organisasi, dan teknologi.
+</p>
+
+<p>
+    Saya suka mencoba hal hal baru, bertemu dengan orang orang baru,
+    dan belajar dari setiap pengalaman yang saya jalani. Buat saya,
+    setiap pengalaman punya cerita dan pelajaran masing-masing.
+    Dari sana, saya terus belajar, berkembang, dan mencari hal-hal baru
+    yang bisa saya coba. 🌱
+</p>
+    </div>
+
+    <div class="about-info">
+
+        <div class="info-box">
+            <span>🎓</span>
+            <h4>Education</h4>
+            <p>Physics Student at Universitas Pendidikan Indonesia</p>
+        </div>
+
+        <div class="info-box">
+            <span>📍</span>
+            <h4>Location</h4>
+            <p>Bandung, Indonesia</p>
+        </div>
+
+        <div class="info-box">
+            <span>💡</span>
+            <h4>Interests</h4>
+            <p>Education, Komunikasi, Media Sosial and Technology</p>
+        </div>
+
+    </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- JOURNEY -->
+    <section id="journey">
+
+    <h2>My Journey</h2>
+
+    <div class="cards">
+
+        <div class="card">
+    <h3>🎓 Education</h3>
+
+    <p>
+        2025 - Sekarang
+    </p>
+
+    <p>
+        Mahasiswa Program Studi Fisika,
+        Universitas Pendidikan Indonesia.
+        Terus belajar dan mengembangkan pemahaman
+        dalam bidang fisika, pendidikan, dan teknologi.
+    </p>
+
+</div>
+
+            <div class="card">
+    <h3>📣 Organization</h3>
+
+    <p>
+        <strong>Staff Kominfo</strong><br>
+        Himpunan Mahasiswa Fisika<br>
+        2025 – 2026
+    </p>
+
+    <p>
+        <strong>Wakil Ketua Divisi Public Relations</strong><br>
+        UPI Generation<br>
+        2026 - 2027
+    </p>
+</div>
+
+
+            <div class="card">
+                <h3>📚 Teaching</h3>
+                <p>
+                    Memiliki pengalaman dalam kegiatan mengajar
+                    dan membantu siswa memahami materi melalui
+                    penjelasan yang sederhana, Kreatif dan bertahap.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+<!-- COMMITTEE EXPERIENCE -->
+<section id="committee">
+
+    <h2>Committee Experience</h2>
+
+    <p class="committee-intro">
+        Beberapa pengalaman kepanitiaan dan kegiatan yang pernah saya ikuti.
+    </p>
+
+    <div class="committee-gallery">
+
+        <div class="committee-item">
+    <img src="IMAGES/Fisika Mengabdi 2026.jpeg" alt="Fisika Mengabdi 2026">
+    <h3>Fisika Mengabdi 2026</h3>
+    <p>Divisi Acara</p>
+</div>
+
+<div class="committee-item">
+    <img src="IMAGES/Geni to school 2026.jpeg" alt="Geni to School 2026">
+    <h3>Geni to School 2026</h3>
+    <p>Koordinasi Acara</p>
+</div>
+
+<div class="committee-item">
+    <img src="IMAGES/Gerakan Literasi dan Numerasi 2026.jpeg" alt="Gerakan Literasi dan Numerasi 2026">
+    <h3>Gerakan Literasi & Numerasi 2026</h3>
+    <p>Master of Ceremony (MC)</p>
+</div>
+
+<div class="committee-item">
+    <img src="IMAGES/Pasosore 2025.jpeg" alt="PASOSORE 2025">
+    <h3>PASOSORE 2025</h3>
+    <p>MC & Divisi Acara</p>
+</div>
+
+    </div>
+
+</section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skill-list">
+    <div class="skill">Communication</div>
+    <div class="skill">Public Speaking</div>
+    <div class="skill">Teamwork</div>
+    <div class="skill">Teaching</div>
+    <div class="skill">Content Creation</div>
+    <div class="skill">Event Management</div>
+    <div class="skill">Content Writing</div>
+</div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>Let's Connect!</h2>
+
+        <p>
+    📧 Email:
+    <a href="mailto:ptridiana130@gmail.com">
+        ptridiana130@gmail.com
+    </a>
+</p>
+
+<p>
+    📱 Instagram:
+    <a href="https://www.instagram.com/ptridiana_13" target="_blank">
+        @ptridiana_13
+    </a>
+</p>
+
+<p>📍 Bandung, Indonesia</p>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+    <p>© 2026 Nabila Putri Dianasari</p>
+    <p>Learning, creating, growing</p>
+</footer>
+
+</body>
+</html>
